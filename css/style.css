@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+
+body {
+  font-family: "Barlow", sans-serif;
+  line-height: 1.7;
+  color: #516171;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700 !important;
+  color: #092032;
+}
+a {
+  text-decoration: none;
+  color: #092032;
+  transition: all 0.4s ease;
+}
+img {
+  width: 100%;
+}
+.bg-cover {
+  background-position: center !important;
+  background-size: cover !important;
+}
+section {
+  padding: 80px 0;
+}
+.intro {
+  margin-bottom: 40px;
+}
+.intro h6 {
+  font-weight: 400;
+  color: #ff4d29;
+}
+.intro p {
+  max-width: 500px;
+  margin: auto;
+}
+/* navbar  */
+.top-nav {
+  background-color: #ff4d29;
+  padding: 10px 0;
+}
+.top-nav p {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 16px;
+  color: #ffffff;
+}
+.inner-top-section {
+  display: flex;
+  align-items: center;
+}
+
+.social-links a {
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff42;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+}
+.social-links a:hover {
+  background-color: #ffffff;
+  color: #ff4d29;
+  transform: translateY(-5px);
+}
+
+.navbar {
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+
+.main-navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 26px;
+  color: #092032;
+}
+.main-navbar .navbar-brand span {
+  color: #ff4d29;
+}
+.main-navbar .navbar-nav .nav-link:hover,
+.main-navbar .navbar-nav .nav-link.active {
+  color: #ff4d29;
+}
+.btn-brand {
+  padding: 9x 24px;
+  background-color: #ff4d29;
+  color: #fff;
+  border-color: #ff4d29;
+}
+.btn-brand:hover {
+  color: white;
+  background-color: #f33712;
+}
+
+/* slider  */
+.slider1 {
+  background: linear-gradient(rgba(9, 32, 50, 0.4), rgba(10, 33, 51, 0.379)),
+    url(../images/man-8.jpg);
+}
+.slider2 {
+  background: linear-gradient(rgba(9, 32, 50, 0.4), rgba(10, 33, 51, 0.379)),
+    url(../images/man-6.jpg);
+}
+
+/* OWL CAROUSAL  */
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  width: 60px !important;
+  height: 60px !important;
+  /* display: grid; */
+  /* place-items: center; */
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  margin-top: -40px !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  border-radius: 100px !important;
+}
+
+.owl-prev {
+  left: 0;
+}
+.owl-next {
+  right: 0;
+}
+
+.owl-next:hover,
+.owl-prev:hover {
+  background-color: #ff4d29 !important;
+}
+
+/* about  */
+.info-box {
+  display: flex;
+  align-items: center;
+}
+.info-box .inner-text {
+  margin-left: 22px;
+}
+.info-box i {
+  font-size: 38px;
+  color: #ff4d29;
+}
+
+.img-section img {
+  border-radius: 15px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* milestone  */
+#milestone {
+  background: linear-gradient(rgba(255, 77, 41, 0.8), rgba(255, 77, 41, 0.7)),
+    url(../images/man-6.jpg);
+}
+
+#milestone .display-4,
+#milestone p {
+  color: #ffffff;
+}
+
+#milestone .display-4 {
+  font-weight: 700;
+}
+
+/* services  */
+.service-box i {
+  font-size: 45px;
+  color: #ff4d29;
+}
+.service-box {
+  padding: 32px;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* project  */
+#project-slider .owl-prev,
+#project-slider .owl-next {
+  background-color: #ffffff6b !important;
+}
+#project-slider .owl-prev:hover,
+#project-slider .owl-next:hover {
+  background-color: #ff4d29 !important;
+}
+.project {
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.project img {
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project .overlay {
+  background: linear-gradient(
+    to top,
+    rgba(10, 33, 51, 0.463),
+    rgba(10, 33, 51, 0.8)
+  );
+  position: absolute;
+  top: 480px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.project:hover .overlay {
+  opacity: 0.9;
+  top: 0;
+}
+.content {
+  position: absolute;
+  top: 480px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  padding: 32px;
+  width: 100%;
+}
+.content h1,
+.content h6 {
+  color: #fff;
+}
+.content h6 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.content h6::before {
+  content: "";
+  height: 2px;
+  width: 24px;
+  background-color: #ff4d29;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.project:hover .content {
+  opacity: 1;
+  top: 200px;
+}
+
+/* team  */
+.team-member {
+  text-align: center;
+}
+.team-member .img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.team-member .overlay {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 33, 51, 0.879);
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+}
+
+.team-member .social-links {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+.team-member:hover .overlay {
+  opacity: 1;
+  top: 0;
+}
+.team-member:hover .social-links {
+  opacity: 1;
+  top: 50%;
+}
+.team-member h5 {
+  margin-top: 25px;
+}
+
+/* review  */
+#reviews {
+  background: linear-gradient(rgba(9, 32, 50, 0.4), rgba(10, 33, 51, 0.379)),
+    url(../images/man-6.jpg);
+}
+.review {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+.review img {
+  width: 95px !important;
+  height: 95px !important;
+  border-radius: 50%;
+  margin: auto;
+  object-fit: cover;
+  object-position: center;
+}
+.review h4 {
+  margin-top: 16px;
+}
+.review p {
+  margin-top: 24px;
+}
+
+.owl-dot.active span {
+  background-color: #ff4d29 !important;
+}
+
+/* blog post  */
+.blog-post {
+  position: relative;
+}
+.blog-post .tag {
+  position: absolute;
+  padding: 4px 12px;
+  background-color: #ff4d29;
+  color: #fff;
+  border-radius: 100px;
+  top: 20px;
+  left: 20px;
+}
+.blog-post h4 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+/* footer  */
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 80px 0 40px 0;
+  background: linear-gradient(rgba(9, 32, 50, 0.4), rgba(10, 33, 51, 0.379)),
+    url(../images/man-6.jpg);
+}
+footer .navbar-brand {
+  color: #fff;
+}
+.footer-top {
+  margin-bottom: 40px;
+}
+.footer-bottom {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+footer .social-links a {
+  margin: 0 4px;
+}
+
+/* form  */
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ff4d29;
+}
+
+@media (max-width: 575px) {
+  .top-nav p:nth-child(2) {
+    display: none;
+  }
+}
